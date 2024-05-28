@@ -1,85 +1,99 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="d-flex" id="wrapper">
+    <div class="border-end bg-white" id="sidebar-wrapper">
+      <div class="border-bottom bg-light logo text-center p-2">iMono</div>
+      <div class="list-group list-group-flush">
+        <RouterLink id="navLinkGettingStarted" class="list-group-item list-group-item-action list-group-item-light p-3"
+          to="/" active-class="navLink-active" exact>
+          Getting started
+        </RouterLink>
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example1"
+          active-class="navLink-active">
+          Example 1
+        </RouterLink>
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example2"
+          active-class="navLink-active">
+          Example 2
+        </RouterLink>
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example3"
+          active-class="navLink-active">
+          Example 3
+        </RouterLink>
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example4"
+          active-class="navLink-active">
+          Example 4
+        </RouterLink>
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example5"
+          active-class="navLink-active">
+          Example 5
+        </RouterLink>
+      </div>
     </div>
-  </header>
 
-  <RouterView />
+    <div id="page-content-wrapper">
+      <div class="container-fluid p-4">
+        <RouterView />
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+#wrapper {
+  overflow-x: hidden;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+#sidebar-wrapper .list-group {
+  width: 15rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+#sidebar-wrapper .list-group-item {
+  border-color: #ccc;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+#sidebar-wrapper .navLink-active {
+  background-color: #5e17eb;
+  color: white;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+#sidebar-wrapper .navLink-active:hover {
+  background-color: #5515d4;
 }
 
-nav a:first-of-type {
-  border: 0;
+#page-content-wrapper {
+  min-width: 100vw;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
   }
 }
 </style>
