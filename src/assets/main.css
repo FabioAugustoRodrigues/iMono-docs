@@ -9,3 +9,8 @@
     font-weight: bold;
     color: #5e17eb;
 }
+
+.btn-theme {
+    background-color: #5e17eb !important;
+    color: white !important;
+}

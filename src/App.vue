@@ -1,5 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import CodeHighlighter from './components/CodeHighlighter.vue';
+
+const codigoPHP = `<?php
+echo "Olá, mundo!";
+?>`;
+
 </script>
 
 <template>
