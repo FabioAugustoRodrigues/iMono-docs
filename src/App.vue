@@ -18,9 +18,9 @@ echo "Olá, mundo!";
           to="/" active-class="navLink-active" exact>
           Getting started
         </RouterLink>
-        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example1"
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/controllers"
           active-class="navLink-active">
-          Example 1
+          Controllers
         </RouterLink>
         <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example2"
           active-class="navLink-active">

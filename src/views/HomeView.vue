@@ -60,9 +60,9 @@
 
       <div class="row mt-4">
         <div class="col-sm-12 col-md-3">
-          <button class="btn btn-theme w-100">
+          <RouterLink to="/controllers" class="btn btn-theme w-100">
             Next step
-          </button>
+          </RouterLink>
         </div>
       </div>
     </section>
