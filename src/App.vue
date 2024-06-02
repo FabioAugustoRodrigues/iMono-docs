@@ -22,9 +22,9 @@ echo "Olá, mundo!";
           active-class="navLink-active">
           Controllers
         </RouterLink>
-        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example2"
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/views"
           active-class="navLink-active">
-          Example 2
+          Views
         </RouterLink>
         <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example3"
           active-class="navLink-active">
