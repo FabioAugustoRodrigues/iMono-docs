@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/configuration',
       name: 'configuration',
       component: () => import('../views/ConfigurationView.vue')
+    },
+    {
+      path: '/cache',
+      name: 'cache',
+      component: () => import('../views/CacheView.vue')
     }
   ]
 })

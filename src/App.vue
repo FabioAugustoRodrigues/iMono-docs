@@ -34,9 +34,9 @@ echo "Olá, mundo!";
           active-class="navLink-active">
           Configuration
         </RouterLink>
-        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example5"
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/cache"
           active-class="navLink-active">
-          Example 5
+          Cache
         </RouterLink>
       </div>
     </div>
