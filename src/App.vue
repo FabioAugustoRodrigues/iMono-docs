@@ -30,9 +30,9 @@ echo "Olá, mundo!";
           active-class="navLink-active">
           Router
         </RouterLink>
-        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example4"
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/configuration"
           active-class="navLink-active">
-          Example 4
+          Configuration
         </RouterLink>
         <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example5"
           active-class="navLink-active">

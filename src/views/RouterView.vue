@@ -152,9 +152,9 @@ const middlewareGroupExample = `Router::group(['middleware' => AuthMiddleware::c
 
 const exampleMiddleware = `<?php
 
-namespace app\http\middleware;
+namespace app\\http\\middleware;
 
-use app\core\controller\Request;
+use app\\core\\controller\\Request;
 
 class AuthMiddleware extends Middleware
 {
