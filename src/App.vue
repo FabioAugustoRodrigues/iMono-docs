@@ -26,9 +26,9 @@ echo "Olá, mundo!";
           active-class="navLink-active">
           Views
         </RouterLink>
-        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example3"
+        <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/router"
           active-class="navLink-active">
-          Example 3
+          Router
         </RouterLink>
         <RouterLink class="list-group-item list-group-item-action list-group-item-light p-3" to="/example4"
           active-class="navLink-active">
