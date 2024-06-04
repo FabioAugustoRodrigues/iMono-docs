@@ -33,6 +33,11 @@ const router = createRouter({
       path: '/cache',
       name: 'cache',
       component: () => import('../views/CacheView.vue')
+    },
+    {
+      path: '/database',
+      name: 'database',
+      component: () => import('../views/DatabaseView.vue')
     }
   ]
 })
