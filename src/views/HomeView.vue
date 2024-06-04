@@ -6,6 +6,15 @@
         An open-source PHP MVC framework for efficient web development. It offers an organized structure and extreme
         simplicity to create agile applications with ease.
       </p>
+
+      <div class="row mb-3">
+        <div class="col-sm-12 col-md-3">
+          <a href="https://github.com/FabioAugustoRodrigues/iMono" class="github-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
       <p>
         iMono is NOT a professional framework and does not include the extensive features found in more robust
         frameworks.
