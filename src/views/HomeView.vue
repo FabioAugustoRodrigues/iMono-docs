@@ -35,22 +35,29 @@
     </section>
 
     <section class="content">
-      <h3>Creating a Controller</h3>
-      <p>Example code for creating a controller in iMono, including a method to return the current date and time in JSON
-        format.</p>
-      <CodeHighlighter :code="exampleController" />
-    </section>
+      <div class="sub-content">
+        <h3>Very quick tutorial</h3>
+      </div>
 
-    <section class="content">
-      <h3>Rendering Templates</h3>
-      <p>Example code for rendering templates using a controller in iMono.</p>
-      <CodeHighlighter :code="exampleControllerRender" />
-    </section>
+      <div class="sub-content">
+        <h5>Creating a Controller</h5>
+        <p>Example code for creating a controller in iMono, including a method to return the current date and time in
+          JSON
+          format.</p>
+        <CodeHighlighter :code="exampleController" />
+      </div>
 
-    <section class="content">
-      <h3>Creating Routes</h3>
-      <p>Example code for creating a route pointing to a method of a controller.</p>
-      <CodeHighlighter :code="exampleRoute" />
+      <div class="sub-content">
+        <h5>Rendering Templates</h5>
+        <p>Example code for rendering templates using a controller in iMono.</p>
+        <CodeHighlighter :code="exampleControllerRender" />
+      </div>
+
+      <div class="sub-content">
+        <h5>Creating Routes</h5>
+        <p>Example code for creating a route pointing to a method of a controller.</p>
+        <CodeHighlighter :code="exampleRoute" />
+      </div>
     </section>
 
     <section class="content">
