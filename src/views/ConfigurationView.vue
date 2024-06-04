@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section class="mb-4">
+        <section class="content">
             <h1>Configuration</h1>
             <p>
                 The iMono framework allows you to configure various system constants and settings in the
@@ -11,7 +11,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="content">
             <h3>Configuration file</h3>
             <p>
                 The <code>config.php</code> file is where you define constants and configure system settings. It
@@ -25,7 +25,7 @@
             <CodeHighlighter :code="configFile"></CodeHighlighter>
         </section>
 
-        <section>
+        <section class="content">
             <h3>Conclusion</h3>
             <p>
                 The <code>config.php</code> file in the iMono framework is the central location for defining system-wide

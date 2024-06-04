@@ -39,7 +39,7 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
 
     <div id="page-content-wrapper">
-      <div class="container-fluid p-4">
+      <div class="container-fluid p-4 back-color">
         <RouterView />
       </div>
     </div>

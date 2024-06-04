@@ -1,17 +1,18 @@
 <template>
     <main>
-        <section class="mb-4">
+        <section class="content">
             <h1>Database</h1>
             <p>
                 The iMono framework provides a simple and efficient way to interact with databases through the
-                <code>Connection</code> class located in <code>app/database/Connection.php</code>. This class utilizes PHP's PDO (PHP
+                <code>Connection</code> class located in <code>app/database/Connection.php</code>. This class utilizes
+                PHP's PDO (PHP
                 Data
                 Objects) extension to establish and manage database connections. The class follows the Singleton pattern
                 to ensure that only one database connection is active at any given time.
             </p>
         </section>
 
-        <section>
+        <section class="content">
             <h3>Configuration</h3>
             <p>
                 Before using the <code>Connection</code> class, ensure that your database configurations are set
@@ -25,59 +26,65 @@
             <CodeHighlighter :code="configFile"></CodeHighlighter>
         </section>
 
-        <section>
-            <h3>Class Definition</h3>
-            <p>
-                The <code>Connection</code> class is defined within the <code>app\database</code> namespace and uses the
-                PDO and PDOException
-                classes from the global namespace.
-            </p>
-        </section>
-
-        <section>
-            <h3>Properties</h3>
-            <ul>
-                <li>
-                    <code>private static $connection;</code>: Holds the single instance of the PDO connection.
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Methods</h3>
-
-            <div>
-                <code>getConnection()</code>
+        <section class="content">
+            <div class="sub-content">
+                <h3>Class Definition</h3>
                 <p>
-                    This static method returns the active PDO connection. If no connection exists, it creates one using
-                    the defined database constants.
+                    The <code>Connection</code> class is defined within the <code>app\database</code> namespace and uses
+                    the
+                    PDO and PDOException
+                    classes from the global namespace.
                 </p>
             </div>
 
-            <div>
-                <code>disconnect()</code>
-                <p>
-                    This static method sets the connection property to null, effectively closing the database
-                    connection.
-                </p>
+            <div class="sub-content">
+                <h5>Properties</h5>
+                <ul>
+                    <li>
+                        <code>private static $connection;</code>: Holds the single instance of the PDO connection.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sub-content">
+                <h5>Methods</h5>
+
+                <div>
+                    <code>getConnection()</code>
+                    <p>
+                        This static method returns the active PDO connection. If no connection exists, it creates one
+                        using
+                        the defined database constants.
+                    </p>
+                </div>
+
+                <div>
+                    <code>disconnect()</code>
+                    <p>
+                        This static method sets the connection property to null, effectively closing the database
+                        connection.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h3>Usage</h3>
-            <p>
-                To interact with the database, use the provided <code>Connection</code> class. This ensures that all
-                database
-                operations utilize a single connection instance, promoting efficiency and consistency.
-            </p>
-        </section>
+        <section class="content">
+            <div class="sub-content">
+                <h3>Usage</h3>
+                <p>
+                    To interact with the database, use the provided <code>Connection</code> class. This ensures that all
+                    database
+                    operations utilize a single connection instance, promoting efficiency and consistency.
+                </p>
+            </div>
 
-        <section>
-            <h3>Example usage</h3>
+            <div class="sub-content">
+                <h5>Example usage</h5>
             <CodeHighlighter :code="exampleUsage"></CodeHighlighter>
+            </div>
         </section>
 
-        <section>
+        <section class="content">
             <h3>Singleton Pattern</h3>
             <p>
                 While you can establish database connections in various ways, the iMono framework promotes the use of
@@ -87,7 +94,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="content">
             <h3>Conclusion</h3>
             <p>
                 The <code>Connection</code> class in the iMono framework provides a streamlined way to manage database

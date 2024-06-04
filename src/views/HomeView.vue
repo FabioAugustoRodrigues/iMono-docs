@@ -1,8 +1,8 @@
 <template>
   <main>
-    <section class="mb-4">
+    <section class="content">
       <h1>Getting started</h1>
-      <p>
+      <p class="text-muted">
         An open-source PHP MVC framework for efficient web development. It offers an organized structure and extreme
         simplicity to create agile applications with ease.
       </p>
@@ -18,7 +18,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="content">
       <h3>Installation</h3>
       <p>To get started with iMono, follow these simple steps:</p>
       <ol>
@@ -34,26 +34,26 @@
       </ol>
     </section>
 
-    <section>
+    <section class="content">
       <h3>Creating a Controller</h3>
       <p>Example code for creating a controller in iMono, including a method to return the current date and time in JSON
         format.</p>
       <CodeHighlighter :code="exampleController" />
     </section>
 
-    <section>
+    <section class="content">
       <h3>Rendering Templates</h3>
       <p>Example code for rendering templates using a controller in iMono.</p>
       <CodeHighlighter :code="exampleControllerRender" />
     </section>
 
-    <section>
+    <section class="content">
       <h3>Creating Routes</h3>
       <p>Example code for creating a route pointing to a method of a controller.</p>
       <CodeHighlighter :code="exampleRoute" />
     </section>
 
-    <section class="mt-4">
+    <section class="content">
       <p>
         In the next steps it will be described how to use the controllers, routes and all iMono features
       </p>

@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section class="mb-4">
+        <section class="content">
             <h1>Router</h1>
             <p>
                 The iMono framework's routing system is a structure that links URLs to PHP controllers and
@@ -13,112 +13,119 @@
             </p>
         </section>
 
-        <section>
-            <h3>Creating a Route</h3>
-            <p>
-                You can define a route by calling one of the static methods on the <code>Router</code> class and
-                specifying
-                the HTTP method, URL pattern, controller class, and method. This can be done in your routing
-                configuration file,
-                typically located at <code>routes/web.php</code> or <code>routes/api.php</code>.
-            </p>
+        <section class="content">
+            <div class="sub-content">
+                <h3>Creating a Route</h3>
+                <p>
+                    You can define a route by calling one of the static methods on the <code>Router</code> class and
+                    specifying
+                    the HTTP method, URL pattern, controller class, and method. This can be done in your routing
+                    configuration file,
+                    typically located at <code>routes/web.php</code> or <code>routes/api.php</code>.
+                </p>
+            </div>
+            <div class="sub-content">
+                <h5>Example</h5>
+
+                <CodeHighlighter :code="exampleRoute" />
+            </div>
         </section>
 
-        <section>
-            <h3>Example</h3>
+        <section class="content">
+            <div class="sub-content">
+                <h3>Methods for Defining Routes</h3>
 
-            <CodeHighlighter :code="exampleRoute" />
+                <ul>
+                    <li>
+                        <CodeHighlighter :code="'Router::get($route, $class, $method)'" />
+                    </li>
+                    <li>
+                        <CodeHighlighter :code="'Router::post($route, $class, $method)'" />
+                    </li>
+                    <li>
+                        <CodeHighlighter :code="'Router::put($route, $class, $method)'" />
+                    </li>
+                    <li>
+                        <CodeHighlighter :code="'Router::delete($route, $class, $method)'" />
+                    </li>
+                    <li>
+                        <CodeHighlighter :code="'Router::patch($route, $class, $method)'" />
+                    </li>
+                    <li>
+                        <CodeHighlighter :code="'Router::options($route, $class, $method)'" />
+                    </li>
+                </ul>
+
+                <p>Each method registers a route for the specified HTTP method.</p>
+            </div>
+            <div class="sub-content">
+                <h5>Example Usage</h5>
+                <CodeHighlighter :code="exampleUsage" />
+            </div>
         </section>
 
-        <section>
-            <h3>Methods for Defining Routes</h3>
+        <section class="content">
+            <div class="sub-content">
+                <h3>Route Patterns</h3>
+                <p>
+                    The router supports dynamic route patterns using curly braces <code>{}</code> to capture URL
+                    parameters.
+                </p>
+            </div>
 
-            <ul>
-                <li>
-                    <CodeHighlighter :code="'Router::get($route, $class, $method)'" />
-                </li>
-                <li>
-                    <CodeHighlighter :code="'Router::post($route, $class, $method)'" />
-                </li>
-                <li>
-                    <CodeHighlighter :code="'Router::put($route, $class, $method)'" />
-                </li>
-                <li>
-                    <CodeHighlighter :code="'Router::delete($route, $class, $method)'" />
-                </li>
-                <li>
-                    <CodeHighlighter :code="'Router::patch($route, $class, $method)'" />
-                </li>
-                <li>
-                    <CodeHighlighter :code="'Router::options($route, $class, $method)'" />
-                </li>
-            </ul>
-
-            <p>Each method registers a route for the specified HTTP method.</p>
+            <div class="sub-content">
+                <h5>Example</h5>
+                <CodeHighlighter :code="examplePatterns" />
+                <p>
+                    In this example, the <code>{id}</code> parameter will be passed to the <code>profile</code> method
+                    of
+                    <code>UserController</code>.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h3>Example Usage</h3>
-            <CodeHighlighter :code="exampleUsage" />
+        <section class="content">
+            <div class="sub-content">
+                <h3>Adding middleware</h3>
+                <p>
+                    Middleware can be added to routes to preprocess requests. Middleware can be specified for individual
+                    routes or grouped routes.
+                </p>
+            </div>
+
+            <div class="sub-content">
+                <h5>Adding Middleware to a Single Route</h5>
+                <CodeHighlighter :code="addMiddlewareExample"></CodeHighlighter>
+            </div>
+
+            <div class="sub-content">
+                <h5>Grouping Routes with Middleware</h5>
+                <p>
+                    You can group routes and apply middleware to the entire group the <code>group</code> method.
+                </p>
+                <CodeHighlighter :code="middlewareGroupExample"></CodeHighlighter>
+            </div>
         </section>
 
-        <section>
-            <h3>Route Patterns</h3>
-            <p>
-                The router supports dynamic route patterns using curly braces <code>{}</code> to capture URL parameters.
-            </p>
+        <section class="content">
+            <div class="sub-content">
+                <h3>Middleware Class</h3>
+                <p>
+                    Middleware classes in the iMono framework are used to define code that can be executed before and
+                    after
+                    the main request handler. All middleware classes should be created in the
+                    <code>app\http\middleware</code> namespace
+                    and extend the <code>Middleware</code> base class.
+                </p>
+            </div>
+
+            <div class="sub-content">
+                <h5>Example Middleware</h5>
+                <CodeHighlighter :code="exampleMiddleware"></CodeHighlighter>
+            </div>
         </section>
 
-        <section>
-            <h3>Example</h3>
-            <CodeHighlighter :code="examplePatterns" />
-            <p>
-                In this example, the <code>{id}</code> parameter will be passed to the <code>profile</code> method of
-                <code>UserController</code>.
-            </p>
-        </section>
-
-        <section>
-            <h3>Adding middleware</h3>
-            <p>
-                Middleware can be added to routes to preprocess requests. Middleware can be specified for individual
-                routes or grouped routes.
-            </p>
-        </section>
-
-        <section>
-            <h3>Adding Middleware to a Single Route</h3>
-            <CodeHighlighter :code="addMiddlewareExample"></CodeHighlighter>
-        </section>
-
-        <section>
-            <h3>Grouping Routes with Middleware</h3>
-            <p>
-                You can group routes and apply middleware to the entire group the <code>group</code> method.
-            </p>
-        </section>
-
-        <section>
-            <h3>Example</h3>
-            <CodeHighlighter :code="middlewareGroupExample"></CodeHighlighter>
-        </section>
-
-        <section>
-            <h3>Middleware Class</h3>
-            <p>
-                Middleware classes in the iMono framework are used to define code that can be executed before and after
-                the main request handler. All middleware classes should be created in the
-                <code>app\http\middleware</code> namespace
-                and extend the <code>Middleware</code> base class.
-            </p>
-        </section>
-
-        <section>
-            <h3>Example Middleware</h3>
-            <CodeHighlighter :code="exampleMiddleware"></CodeHighlighter>
-        </section>
-
-        <section>
+        <section class="content">
             <h3>Conclusion</h3>
             <p>
                 The iMono framework's router system provides a flexible and powerful way to handle routing in your
