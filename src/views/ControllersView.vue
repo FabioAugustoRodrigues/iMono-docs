@@ -9,14 +9,14 @@
         tasks such as creating responses, sending JSON data, and rendering views.
       </p>
       <p>
-        The controller files are located in <code>app/http/controller</code> folder
+        The controller files are located in <code>app/http/controller</code> folder.
       </p>
     </section>
 
     <section>
       <h3>Controller Abstract Class</h3>
       <p>
-        The ControllerAbstract class, located in the <code>app\core\controller</code> namespace,
+        The <code>ControllerAbstract</code> class, located in the <code>app\core\controller</code> namespace,
         provides several protected methods that are intended to be used by concrete controller classes.
       </p>
     </section>
@@ -25,7 +25,7 @@
       <h3>Example controller</h3>
       <p>
         The <code>ExampleController</code> class, located in the <code>app/http/controller</code> namespace, extends the
-        <code>ControllerAbstract</code> class and demostrates how to implement custom controller actions
+        <code>ControllerAbstract</code> class and demostrates how to implement custom controller actions.
       </p>
     </section>
 
@@ -52,7 +52,7 @@
 
       <div>
         <p>
-          Note that these methods were developed only to explain the use of the controller
+          Note that these methods were developed only to explain the use of the controller.
         </p>
       </div>
     </section>
@@ -68,7 +68,7 @@
         <li>Extend <code>ControllerAbstract</code> class: Ensure your new controller class extends the
           <code>ControllerAbstract</code> class.
         </li>
-        <li>Define Controller Methods: Deine the methods that will handle diffent actions</li>
+        <li>Define Controller Methods: Deine the methods that will handle diffent actions.</li>
         <li>Use Protected Methods: Utilize the protected methods provided by the <code>ControllerAbstract</code> class
           to manage responses and views.</li>
       </ol>
@@ -88,8 +88,9 @@
       <h3>Conclusion</h3>
 
       <p>
-        The iMono framework's controller system provides a simple, robust, and flexible way to handle HTTP request
-        and generate responses. By extending the ControllerAbstract class, developers can quickly create controllers
+        The iMono framework's controller system provides a simple and flexible way to handle HTTP request
+        and generate responses. By extending the <code>ControllerAbstract</code> class, developers can quickly create
+        controllers
         that
         leverage built-in methods to create and send responses, manage JSON data, and render views.
       </p>

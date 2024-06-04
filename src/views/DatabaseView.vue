@@ -4,7 +4,7 @@
             <h1>Database</h1>
             <p>
                 The iMono framework provides a simple and efficient way to interact with databases through the
-                Connection class located in <code>app/database/Connection.php</code>. This class utilizes PHP's PDO (PHP
+                <code>Connection</code> class located in <code>app/database/Connection.php</code>. This class utilizes PHP's PDO (PHP
                 Data
                 Objects) extension to establish and manage database connections. The class follows the Singleton pattern
                 to ensure that only one database connection is active at any given time.

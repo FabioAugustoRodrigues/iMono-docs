@@ -3,7 +3,7 @@
         <section class="mb-4">
             <h1>Router</h1>
             <p>
-                The iMono framework's routing system is a robust structure that links URLs to PHP controllers and
+                The iMono framework's routing system is a structure that links URLs to PHP controllers and
                 methods.
                 It supports various HTTP methods (<code>GET</code>, <code>POST</code>, <code>PUT</code>,
                 <code>DELETE</code>, <code>PATCH</code>, <code>OPTIONS</code>)

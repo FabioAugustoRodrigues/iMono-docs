@@ -3,17 +3,17 @@
     <section class="mb-4">
       <h1>Getting started</h1>
       <p>
-        An open-source PHP MVC framework for efficient web development. It offers an organized structure, extreme
-        simplicity, and powerful features to create agile applications with ease.
+        An open-source PHP MVC framework for efficient web development. It offers an organized structure and extreme
+        simplicity to create agile applications with ease.
       </p>
       <p>
         iMono is NOT a professional framework and does not include the extensive features found in more robust
         frameworks.
         If your needs are simple, such as displaying a few pages, making basic database queries, and implementing a bit
-        of
-        AJAX without diving into extensive documentation of complex frameworks, then iMono could be the ideal solution
-        for
-        you. iMono is extremely easy to install, works on almost any platform, and keeps things as straightforward as
+        of AJAX without diving into extensive documentation of complex frameworks, then iMono could be the ideal
+        solution
+        for you. iMono is extremely easy to install, works on almost any platform, and keeps things as straightforward
+        as
         possible.
       </p>
     </section>
