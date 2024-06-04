@@ -1,15 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import CodeHighlighter from './components/CodeHighlighter.vue';
-
-const codigoPHP = `<?php
-echo "Olá, mundo!";
-?>`;
-
 </script>
 
 <template>
-
   <div class="d-flex" id="wrapper">
     <div class="border-end bg-white" id="sidebar-wrapper">
       <div class="border-bottom bg-light logo text-center p-2">iMono</div>
@@ -59,12 +52,13 @@ echo "Olá, mundo!";
 }
 
 #sidebar-wrapper {
-  min-height: 100vh;
-  margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 15rem;
+  background-color: white;
+  z-index: 1000;
 }
 
 #sidebar-wrapper .list-group {
@@ -85,7 +79,9 @@ echo "Olá, mundo!";
 }
 
 #page-content-wrapper {
-  min-width: 100vw;
+  margin-left: 15rem;
+  width: calc(100vw - 15rem);
+  overflow-y: auto;
 }
 
 body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
@@ -98,8 +94,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   }
 
   #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
+    margin-left: 15rem;
+    width: calc(100vw - 15rem);
   }
 
   body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
