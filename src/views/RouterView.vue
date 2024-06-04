@@ -11,9 +11,23 @@
                 for preprocessing requests.
                 The system also supports route patterns, facilitating dynamic parameters within URLs.
             </p>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h6>On this page</h6>
+                    <ul class="">
+                        <li><a href="#creating-route" class="text-decoration-none">Creating a Route</a></li>
+                        <li><a href="#methods" class="text-decoration-none">Methods for Defining Routes</a></li>
+                        <li><a href="#route-patterns" class="text-decoration-none">Route patterns</a></li>
+                        <li><a href="#adding-middleware" class="text-decoration-none">Adding middleware</a></li>
+                        <li><a href="#middleware-class" class="text-decoration-none">Middleware class</a></li>
+                        <li><a href="#conclusion" class="text-decoration-none">Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="creating-route">
             <div class="sub-content">
                 <h3>Creating a Route</h3>
                 <p>
@@ -31,7 +45,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="methods">
             <div class="sub-content">
                 <h3>Methods for Defining Routes</h3>
 
@@ -64,7 +78,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="route-pattern">
             <div class="sub-content">
                 <h3>Route Patterns</h3>
                 <p>
@@ -84,7 +98,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="adding-middleware">
             <div class="sub-content">
                 <h3>Adding middleware</h3>
                 <p>
@@ -107,7 +121,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="middleware-class">
             <div class="sub-content">
                 <h3>Middleware Class</h3>
                 <p>
@@ -125,7 +139,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="conclusion">
             <h3>Conclusion</h3>
             <p>
                 The iMono framework's router system provides a flexible and powerful way to handle routing in your

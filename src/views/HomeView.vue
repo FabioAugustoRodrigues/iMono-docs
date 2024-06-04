@@ -16,9 +16,20 @@
         as
         possible.
       </p>
+
+      <div class="row mt-4">
+        <div class="col-12">
+          <h6>On this page</h6>
+          <ul class="">
+            <li><a href="#installation" class="text-decoration-none">Installation</a></li>
+            <li><a href="#tutorial" class="text-decoration-none">Very quick tutorial</a></li>
+            <li><a href="#next-steps" class="text-decoration-none">Next steps</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="content">
+    <section class="content" id="installation">
       <h3>Installation</h3>
       <p>To get started with iMono, follow these simple steps:</p>
       <ol>
@@ -34,7 +45,7 @@
       </ol>
     </section>
 
-    <section class="content">
+    <section class="content" id="tutorial">
       <div class="sub-content">
         <h3>Very quick tutorial</h3>
       </div>
@@ -60,7 +71,7 @@
       </div>
     </section>
 
-    <section class="content">
+    <section class="content" id="next-steps">
       <p>
         In the next steps it will be described how to use the controllers, routes and all iMono features
       </p>

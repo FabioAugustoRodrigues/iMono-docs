@@ -9,9 +9,19 @@
                 your database
                 connections, cache settings, and other system-wide constants.
             </p>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h6>On this page</h6>
+                    <ul class="">
+                        <li><a href="#configuration-file" class="text-decoration-none">Configuration file</a></li>
+                        <li><a href="#conclusion" class="text-decoration-none">Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="configuration-file">
             <h3>Configuration file</h3>
             <p>
                 The <code>config.php</code> file is where you define constants and configure system settings. It
@@ -25,7 +35,7 @@
             <CodeHighlighter :code="configFile"></CodeHighlighter>
         </section>
 
-        <section class="content">
+        <section class="content" id="conclusion">
             <h3>Conclusion</h3>
             <p>
                 The <code>config.php</code> file in the iMono framework is the central location for defining system-wide

@@ -11,9 +11,20 @@
       <p>
         The controller files are located in <code>app/http/controller</code> folder.
       </p>
+      
+      <div class="row mt-4">
+        <div class="col-12">
+          <h6>On this page</h6>
+          <ul class="">
+            <li><a href="#controller-abstract-class" class="text-decoration-none">Controller Abstract Class</a></li>
+            <li><a href="#usage" class="text-decoration-none">Usage</a></li>
+            <li><a href="#conclusion" class="text-decoration-none">Conclusion</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="content">
+    <section class="content" id="controller-abstract-class">
       <div class="sub-content">
         <h3>Controller Abstract Class</h3>
         <p>
@@ -60,7 +71,7 @@
       </div>
     </section>
 
-    <section class="content">
+    <section class="content" id="usage">
       <div class="sub-content">
         <h3>Usage</h3>
         <p>
@@ -90,7 +101,7 @@
       </div>
     </section>
 
-    <section class="content">
+    <section class="content" id="conclusion">
       <h3>Conclusion</h3>
 
       <p>

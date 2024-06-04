@@ -10,9 +10,22 @@
                 Objects) extension to establish and manage database connections. The class follows the Singleton pattern
                 to ensure that only one database connection is active at any given time.
             </p>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h6>On this page</h6>
+                    <ul class="">
+                        <li><a href="#configuration" class="text-decoration-none">Configuration</a></li>
+                        <li><a href="#class-definition" class="text-decoration-none">Class definition</a></li>
+                        <li><a href="#usage" class="text-decoration-none">Usage</a></li>
+                        <li><a href="#singletton-pattern" class="text-decoration-none">Singletton Pattern</a></li>
+                        <li><a href="#conclusion" class="text-decoration-none">Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="configuration">
             <h3>Configuration</h3>
             <p>
                 Before using the <code>Connection</code> class, ensure that your database configurations are set
@@ -26,7 +39,7 @@
             <CodeHighlighter :code="configFile"></CodeHighlighter>
         </section>
 
-        <section class="content">
+        <section class="content" id="class-definition">
             <div class="sub-content">
                 <h3>Class Definition</h3>
                 <p>
@@ -68,7 +81,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="usage">
             <div class="sub-content">
                 <h3>Usage</h3>
                 <p>
@@ -84,7 +97,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="singleton-pattern">
             <h3>Singleton Pattern</h3>
             <p>
                 While you can establish database connections in various ways, the iMono framework promotes the use of
@@ -94,7 +107,7 @@
             </p>
         </section>
 
-        <section class="content">
+        <section class="content" id="conclusion">
             <h3>Conclusion</h3>
             <p>
                 The <code>Connection</code> class in the iMono framework provides a streamlined way to manage database

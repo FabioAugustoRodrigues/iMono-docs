@@ -6,11 +6,24 @@
                 The iMono framework includes a simple caching system designed to temporarily store data and improve the
                 performance of your application. This caching system is configurable and easy to use.
             </p>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h6>On this page</h6>
+                    <ul class="">
+                        <li><a href="#configuration" class="text-decoration-none">Configuration</a></li>
+                        <li><a href="#supported-types" class="text-decoration-none">Supported Cache Types</a></li>
+                        <li><a href="#using-cache" class="text-decoration-none">Using the cache</a></li>
+                        <li><a href="#example-usage" class="text-decoration-none">Example usage</a></li>
+                        <li><a href="#conclusion" class="text-decoration-none">Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="configuration">
             <div class="sub-content">
-                <h3>Configuration file</h3>
+                <h3>Configuration</h3>
                 <p>
                     The type of cache to be used is configured in the <code>app/config/config.php</code> file.
                     By default, the caching system uses an in-memory array to store cached data.
@@ -22,7 +35,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="supported-types">
             <h3>Supported Cache Types</h3>
             <p>
                 Currently, iMono supports array-based caching. This type of caching is suitable for temporary, in-memory
@@ -30,7 +43,7 @@
             </p>
         </section>
 
-        <section class="content">
+        <section class="content" id="using-cache">
             <div class="sub-content">
                 <h3>Using the Cache</h3>
                 <p>
@@ -98,7 +111,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="example-usage">
             <h3>Example usage</h3>
             <p>
                 Below is a complete example demonstrating how to use the caching system in your application:
@@ -106,7 +119,7 @@
             <CodeHighlighter :code="exampleUsage"></CodeHighlighter>
         </section>
 
-        <section class="content">
+        <section class="content" id="conclusion">
             <h3>Conclusion</h3>
             <p>
                 The caching system in the iMono framework is a powerful tool for improving the performance of your
