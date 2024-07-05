@@ -88,6 +88,31 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   margin-left: 0;
 }
 
+@media (max-width: 767px) {
+  #sidebar-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #page-content-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #wrapper {
+    flex-direction: column;
+  }
+
+  #sidebar-wrapper {
+    display: none;
+  }
+
+  #sidebar-wrapper.v-show {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
